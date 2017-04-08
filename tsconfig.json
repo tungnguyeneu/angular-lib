@@ -26,6 +26,7 @@
       "index.ts"
   ],
   "angularCompilerOptions": {
-    "strictMetadataEmit": true
+    "strictMetadataEmit": true,
+    "genDir": "compiled"
   }
 }

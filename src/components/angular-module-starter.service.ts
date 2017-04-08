@@ -8,6 +8,6 @@ export class AngularModuleStarterService {
     }
 
     getMessage() {
-        return 'Hello from the Service!'
+        return 'Hello from the Service Angular lib!!!!!!'
     }
 }

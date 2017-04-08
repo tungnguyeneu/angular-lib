@@ -5,7 +5,5 @@ node_modules
 npm-debug.log
 *.ngsummary.json
 dist/*
-!dist/package.json
-!src/**/*.ts
-src/**/*.ngfactory.ts
-src/**/*.ngsummary.json
+*.tgz
+/compiled/
