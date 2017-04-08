@@ -5,7 +5,8 @@
   "main": "dist/bundles/angular-lib.umd.js",
   "module": "dist/index.js",
   "scripts": {
-    "cleanup": "rimraf dist",
+    "cleanup": "rimraf dist compiled",
+    "test": "karma start",
     "bundling": "rollup -c",
     "minify": "uglifyjs dist/bundles/angular-lib.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/angular-lib.umd.min.js",
     "copy": "copyfiles package.json README.md dist",
@@ -30,22 +31,38 @@
     "url": "https://github.com/beeman/angular-lib/issues"
   },
   "peerdependencies": {
-    "@angular/core": "^2.4.0",
-    "reflect-metadata": "^0.1.8",
-    "rxjs": "^5.0.3",
-    "zone.js": "^0.7.2"
+    "@angular/core": "4.0.1",
+    "@angular/common": "4.0.1",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/core": "^2.4.0",
-    "@angular/compiler": "^2.4.0",
-    "@angular/compiler-cli": "^2.4.0",
-    "reflect-metadata": "^0.1.8",
-    "rxjs": "^5.0.3",
-    "zone.js": "^0.7.2",
+    "@angular/common": "4.0.1",
+    "@angular/core": "4.0.1",
+    "@angular/compiler": "4.0.1",
+    "@angular/compiler-cli": "4.0.1",
+    "@angular/platform-browser": "4.0.1",
+    "@angular/platform-browser-dynamic": "4.0.1",
+    "@angular/platform-server": "4.0.1",
+    "@types/jasmine": "2.5.46",
+    "@types/node": "7.0.10",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4",
     "copyfiles": "^1.0.0",
     "rimraf": "^2.5.4",
-    "rollup": "^0.37.0",
-    "typescript": "~2.0.10",
-    "uglify-js": "^2.7.5"
+    "rollup": "0.41.6",
+    "typescript": "^2.1.5",
+    "uglify-js": "^2.7.5",
+    "ts-helpers": "1.1.2",
+    "ts-loader": "2.0.3",
+    "jasmine-core": "2.5.2",
+    "karma": "1.5.0",
+    "karma-chrome-launcher": "2.0.0",
+    "karma-jasmine": "1.1.0",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-spec-reporter": "0.0.30",
+    "karma-webpack": "2.0.3",
+    "webpack": "2.3.1"
   }
 }
