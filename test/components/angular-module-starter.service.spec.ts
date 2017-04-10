@@ -1,6 +1,6 @@
-import { inject, TestBed } from '@angular/core/testing';
+import {inject, TestBed} from '@angular/core/testing';
 
-import { AngularModuleStarterService } from './../../index';
+import {AngularModuleStarterService} from './../../index';
 
 describe('SumService', () => {
 
@@ -13,10 +13,9 @@ describe('SumService', () => {
     });
 
     it('should return hello message',
-        inject([AngularModuleStarterService],
-            (starterService: AngularModuleStarterService) => {
-                expect(starterService.getMessage()).toEqual('Hello from the Service Angular lib!!!!!!');
-            })
+        inject([AngularModuleStarterService], (starterService: AngularModuleStarterService) => {
+            expect(starterService.getMessage()).toEqual('Hello from the Service Angular lib!!!!!!');
+        })
     );
 
 });

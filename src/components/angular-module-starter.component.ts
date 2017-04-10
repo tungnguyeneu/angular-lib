@@ -1,11 +1,10 @@
-import {Component} from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 import {AngularModuleStarterService} from './angular-module-starter.service'
 
 @Component({
     selector: 'angular-module-starter',
-    template: `
-        <h1>{{message}}</h1>
-    `
+    templateUrl: './angular-module-starter.component.html',
+    styleUrls: ['./angular-module-starter.component.scss']
 })
 export class AngularModuleStarterComponent {
 
